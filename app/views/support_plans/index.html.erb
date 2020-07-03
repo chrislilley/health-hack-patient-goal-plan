@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<% @support_plans.each do |support_plan| %>
+    <div class="container">
+            <h4>My Support Plan</h4>
+            <div class="section">
+              <h5>Link worker</h5>
+              <p><%= support_plan.supportWorkerName %></p>
+              <p><%= support_plan.supportWorkerPhone %></p>
+            </div>
+            <%= render partial: "plan_section",
+                locals: {title: "What’s important to me?",
+                        content: support_plan.whatsImportant } %>
+            <%= render partial: "plan_section",
+                locals: {title: "My Goals",
+                        content: support_plan.goals } %>
+            <%= render partial: "plan_section",
+                locals: {title: "What Challenges will I face?",
+                        content: support_plan.challenges } %>
+            <%= render partial: "plan_section",
+                locals: {title: "What Support would help me face the challenges and achieve my goals?",
+                        content: support_plan.howAmIBestSupported } %>
+            <%= render partial: "plan_section",
+                locals: {title: "What action is expected from me?",
+                        content: support_plan.expectedOfMe } %>
+            <%= render partial: "plan_section",
+                locals: {title: "What action can I expect from my Link Worker?",
+                        content: support_plan.goals } %>
+            <%= render partial: "plan_section",
+                locals: {title: "What time might it take to reach my goals?",
+                        content: support_plan.whatTimeMightItTake } %>
+            <%= render partial: "plan_section",
+                locals: {title: "Long term conditions agencies need to be aware of",
+                        content: support_plan.longTermConditions } %>
+            <%= render partial: "plan_section",
+                locals: {title: "My Goals",
+                        content: support_plan.goals } %>
+            <div class="section">
+              <h5>Review date</h5>
+              <p><%= support_plan.reviewDate %></p>
+            </div>
+    </div>
+    <p><%= link_to 'Show', support_plan %></p>
+    <p><%= link_to 'Edit', edit_support_plan_path(support_plan) %></p>
+    <p><%= link_to 'Destroy', support_plan, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    <p><%= link_to 'New Support Plan', new_support_plan_path %></p>
+<% end %>

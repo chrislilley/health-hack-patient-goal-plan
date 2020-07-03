@@ -1,0 +1,72 @@
+<%= form_with(model: support_plan, local: true) do |form| %>
+  <% if support_plan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(support_plan.errors.count, "error") %> prohibited this support_plan from being saved:</h2>
+
+      <ul>
+        <% support_plan.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label 'Support worker name' %>
+    <%= form.text_field :supportWorkerName %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Support worker phone number' %>
+    <%= form.text_field :supportWorkerPhone %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'What''s important to me?' %>
+    <%= form.text_field :whatsImportant %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'How am I best supported?' %>
+    <%= form.text_field :howAmIBestSupported %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Long term conditions support organisations need to know about'  %>
+    <%= form.text_field :longTermConditions %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'My goals' %>
+    <%= form.text_field :goals %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Support I''m connected with' %>
+    <%= form.text_field :support %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'What''s expected of me?' %>
+    <%= form.text_field :expectedOfMe %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'What is expected of my support?' %>
+    <%= form.text_field :expectedOfSupport %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'What can I do to achieve my goals?' %>
+    <%= form.text_field :whatCanIDo %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Review date' %>
+    <%= form.date_select :reviewDate %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

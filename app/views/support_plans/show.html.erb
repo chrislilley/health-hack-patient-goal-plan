@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Supportworkername:</strong>
+  <%= @support_plan.supportWorkerName %>
+</p>
+
+<p>
+  <strong>Supportworkerphone:</strong>
+  <%= @support_plan.supportWorkerPhone %>
+</p>
+
+<p>
+  <strong>Whatsimportant:</strong>
+  <%= @support_plan.whatsImportant %>
+</p>
+
+<p>
+  <strong>Howamibestsupported:</strong>
+  <%= @support_plan.howAmIBestSupported %>
+</p>
+
+<p>
+  <strong>Longtermconditions:</strong>
+  <%= @support_plan.longTermConditions %>
+</p>
+
+<p>
+  <strong>Goals:</strong>
+  <%= @support_plan.goals %>
+</p>
+
+<p>
+  <strong>Support:</strong>
+  <%= @support_plan.support %>
+</p>
+
+<p>
+  <strong>Expectedofme:</strong>
+  <%= @support_plan.expectedOfMe %>
+</p>
+
+<p>
+  <strong>Expectedofsupport:</strong>
+  <%= @support_plan.expectedOfSupport %>
+</p>
+
+<p>
+  <strong>Whatcanido:</strong>
+  <%= @support_plan.whatCanIDo %>
+</p>
+
+<p>
+  <strong>Reviewdate:</strong>
+  <%= @support_plan.reviewDate %>
+</p>
+
+<%= link_to 'Edit', edit_support_plan_path(@support_plan) %> |
+<%= link_to 'Back', support_plans_path %>

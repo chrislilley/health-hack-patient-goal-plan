@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scheduledDate: 2020-06-28
+  scheduledTime: 2020-06-28 18:03:18
+  title: MyString
+  subtitle: MyString
+  attended: false
+
+two:
+  scheduledDate: 2020-06-28
+  scheduledTime: 2020-06-28 18:03:18
+  title: MyString
+  subtitle: MyString
+  attended: false

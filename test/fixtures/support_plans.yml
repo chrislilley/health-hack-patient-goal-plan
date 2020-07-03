@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  supportWorkerName: MyString
+  supportWorkerPhone: MyString
+  whatsImportant: MyString
+  howAmIBestSupported: MyString
+  longTermConditions: MyString
+  goals: 
+  support: MyString
+  expectedOfMe: MyString
+  expectedOfSupport: MyString
+  whatCanIDo: MyString
+  reviewDate: 2020-06-26
+
+two:
+  supportWorkerName: MyString
+  supportWorkerPhone: MyString
+  whatsImportant: MyString
+  howAmIBestSupported: MyString
+  longTermConditions: MyString
+  goals: 
+  support: MyString
+  expectedOfMe: MyString
+  expectedOfSupport: MyString
+  whatCanIDo: MyString
+  reviewDate: 2020-06-26
