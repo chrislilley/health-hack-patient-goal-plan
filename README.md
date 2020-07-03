@@ -8,3 +8,5 @@ The application allows a patient to view their Goal Plan and track the activitie
 - they have progress information for periodic reviews of the plan.
 
 The application is a simple Rails app build using Rails 6.0 and Ruby 2.7 with Materialize for material design UI support
+
+This project was Hack #9 in the Black Pepper Health Hack 2020
